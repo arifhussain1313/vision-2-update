@@ -48,6 +48,49 @@
     <link rel="stylesheet" href="profile.css" />
     <!-- custom js link profile -->
     <script src="profile.js" defer></script>
+    <style>
+      .card {
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 10px;
+  }
+  .card-img-top {
+    height: 100px;
+  }
+}
+
+.card-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+    </style>
 </head>
 <body>
   <!-- nav bar start -->
@@ -134,65 +177,45 @@
         </button>
       </div>
       <!-- bootstrap slider end -->
-       <!-- bootstrap cards -->
-          
-       <div class="row justify-content-between">  
-        <div class="col-sm-4">  
-            <div class="card" style="width: 18rem;">  
-                <img src="https://th.bing.com/th/id/OIP.PCuOtR7Ji3kHDTadjUvw1wHaGE?rs=1&pid=ImgDetMain" class="card-img-top" alt="Roadside Repairing">  
-                <div class="card-body">  
-                    <p class="card-text">Emergency Roadside Assistance – Your trusted partner when you need help on the road. Call us anytime, anywhere, and we’ll be there to assist you with flat tires, jump-starts, towing, and more. Keep your membership number handy!”</p>  
-                </div>  
-            </div>  
-        </div>  
-        
-        <div class="col-sm-4">  
-            <div class="card" style="width: 18rem;">  
-                <img src="https://gas-asap.co.za/uploads/images/300-IMG201805104047.png" class="card-img-top" alt="gas station">  
-                <div class="card-body">  
-                    <p class="card-text">Emergency Fuel Delivery: If you run out of gas while on the road, emergency fuel delivery services can save the day. They’ll bring fuel directly to your location, whether you’re stranded on the highway or in a parking lot.</p>  
-                </div>  
-            </div>  
-        </div>  
-        
-        <div class="col-sm-4">  
-            <div class="card" style="width: 18rem;">  
-                <img src="https://th.bing.com/th/id/OIP.UlmDjEYREJnvFDsHG7YOdwHaDt?rs=1&pid=ImgDetMain" class="card-img-top" alt="Towing services">  
-                <div class="card-body">  
-                    <p class="card-text">Car and Motorcycle Towing: Tech thrive solution offers affordable towing services for cars and motorcycles. One-Way and In-Town Rentals: You can rent towing equipment for your specific needs</p>  
-                </div>  
-            </div>  
-        </div>  
-    </div>  
-          
-    <div class="row justify-content-between">  
-        <div class="col-sm-4">  
-            <div class="card" style="width: 18rem;">  
-                <img src="https://th.bing.com/th/id/OIP.am1XaZxUbQRiEY3jVAaAVwHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="AC Repair">  
-                <div class="card-body">  
-                    <p class="card-text">nitial Assessment: The technician assesses the AC unit and its surroundings. Visual Inspection: They visually inspect the system and provide recommendations. Diagnostic Testing: Diagnostic tests help identify the issue.</p>  
-                </div>  
-            </div>  
-        </div>  
-        
-        <div class="col-sm-4">  
-            <div class="card" style="width: 18rem;">  
-                <img src="https://th.bing.com/th/id/R.433935dd447955b852f67389b851bdf5?rik=hvCW7av83B4i%2bA&riu=http%3a%2f%2fwww.josephsaffordable.com%2fwp-content%2fuploads%2f2015%2f11%2fplumber2.jpg&ehk=n%2fpHncjfmwkBKIwlBLMg3GbWOSUPbFQohhMW71w8KzQ%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="PLUMBER">  
-                <div class="card-body">  
-                    <p class="card-text">Services: They offer plumbing pipe repair, drain repair, installation, water heater replacement, and more. Customer Review: Hailey & James Penwell praised their competitive pricing, promptness, and expertise. They value both affordability and excellence in their work</p>  
-                </div>  
-            </div>  
-        </div>  
-        
-        <div class="col-sm-4">  
-            <div class="card" style="width: 18rem;">  
-                <img src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-master-refrigerator-repair-fix-worker-picture-image_8474758.png" class="card-img-top" alt="Refregrator">  
-                <div class="card-body">  
-                    <p class="card-text">“Expert Refrigerator Repairs: When your fridge isn’t cooling properly or making strange noises, our skilled technicians are here to help. We diagnose issues, replace faulty parts, and ensure your refrigerator runs smoothly. Contact us for reliable and efficient repair services!”</p>  
-                </div>  
-            </div>  
-        </div>  
+      <!-- bootstrap cards -->
+<div class="row justify-content-between">
+  <div class="col-md-4">
+    <div class="card card-container" style="width: 18rem;">
+      <img src="https://th.bing.com/th/id/OIP.PCuOtR7Ji3kHDTadjUvw1wHaGE?rs=1&pid=ImgDetMain" class="card-img-top" alt="Roadside Repairing">
+      <div class="card-body">
+        <h5 class="card-title">Roadside Repairing</h5>
+        <p class="card-text">Emergency Roadside Assistance – Your trusted partner when you need help on the road. Call us anytime, anywhere, and we’ll be there to assist you with flat tires, jump-starts, towing, and more. Keep your membership number handy!</p>
+      </div>
     </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-container" style="width: 18rem;">
+      <img src="https://gas-asap.co.za/uploads/images/300-IMG201805104047.png" class="card-img-top" alt="Gas Station">
+      <div class="card-body">
+        <h5 class="card-title">Gas Station</h5>
+        <p class="card-text">Emergency Fuel Delivery: If you run out of gas while on the road, emergency fuel delivery services can save the day. They’ll bring fuel directly to your location, whether you’re stranded on the highway or in a parking lot.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-container" style="width: 18rem;">
+      <img src="https://th.bing.com/th/id/OIP.UlmDjEYREJnvFDsHG7YOdwHaDt?rs=1&pid=ImgDetMain" class="card-img-top" alt="Towing Services">
+      <div class="card-body">
+        <h5 class="card-title">Towing Services</h5>
+        <p class="card-text">Car and Motorcycle Towing: Tech thrive solution offers affordable towing services for cars and motorcycles. One-Way and In-Town Rentals: You can rent towing equipment for your specific needs</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-container" style="width: 18rem;">
+      <img src="https://th.bing.com/th/id/OIP.am1XaZxUbQRiEY3jVAaAVwHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="AC Repair">
+      <div class="card-body">
+        <h5 class="card-title">AC Repair</h5>
+        <p class="card-text">nitial Assessment: The technician assesses the AC unit and its surroundings. Visual Inspection: They visually inspect the system and provide recommendations. Diagnostic Testing: Diagnostic tests help identify the issue.</p>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- bootstrap cards end -->
      <!-- notification dropdown menu -->
 <div class="notification-dropdown" id="notification-dropdown">
