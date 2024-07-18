@@ -1,0 +1,254 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+/* body selector */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+/* box */
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* box before */
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+/* box after */
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+/* border line */
+.borderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+/* borderline before */
+.borderline::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+/* borderline after */
+.borderline::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+/* keyframes for animate */
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* box form */
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: #fff;
+    padding: 50px 40px;
+    z-index: 2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+/* h2 */
+.box form h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+/* input box */
+.box form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+/* inputbox input */
+.box form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+/* inputbox span */
+.box form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+/* inputbox input valid and focus */
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span{
+    color: #45f3ff;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+/* inputbox i */
+.box form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+}
+/* inputbox input valid and focus i */
+.box form .inputBox input:valid ~ i,
+.box form .inputBox input:focus ~ i{
+    height: 44px;
+}
+/* links forgot password */
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+}
+/* links a */
+.box form .links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+/* links a hover and focus */
+.box form .links a:hover,
+.box form .links a:nth-child(2){
+    color: #45f3ff;
+}
+/* input submit */
+.box form input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1em;
+}
+/* input submit hover and focus */
+.box form input[type="submit"]:active{
+    opacity: 0.8;
+}
+/* Add media queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media (max-width: 768px) {
+    .box {
+       width: 300px;
+       height: 360px;
+     }
+    .box::before,.box::after,.borderline::before,.borderline::after {
+       width: 300px;
+       height: 360px;
+     }
+    .box form {
+       padding: 30px 20px;
+     }
+    .box form.inputBox {
+       width: 250px;
+     }
+    .box form.inputBox input {
+       font-size: 0.9em;
+     }
+    .box form.links {
+       flex-direction: column;
+     }
+    .box form.links a {
+       margin: 5px 0;
+     }
+   }
+   
+   /* For screens smaller than 480px (small mobiles) */
+   @media (max-width: 480px) {
+    .box {
+       width: 250px;
+       height: 300px;
+     }
+    .box::before,.box::after,.borderline::before,.borderline::after {
+       width: 250px;
+       height: 300px;
+     }
+    .box form {
+       padding: 20px 15px;
+     }
+    .box form.inputBox {
+       width: 200px;
+     }
+    .box form.inputBox input {
+       font-size: 0.8em;
+     }
+    .box form.links a {
+       font-size: 0.7em;
+     }
+   }

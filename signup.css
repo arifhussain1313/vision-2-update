@@ -1,0 +1,92 @@
+/* body */
+body {
+    background-image: url(pexels-photo-6153354.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  /* container */
+  .container {
+    max-width: 500px;
+    color: white;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+  }
+  /* row */
+  .row {
+    margin-top: 20px;
+  }
+  /* h1 */
+  h1 {
+    font-weight: bold;
+    color: #333;
+  }
+  /* label */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* input text */
+  input[type="text"], input[type="number"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  /* input submit */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /* input submit hover */
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  /* select */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  /* clearfix */
+  .clearfix {
+    margin-top: 20px;
+  }
+  /* cancelbth,signupbtn */
+  .cancelbtn,.signupbtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /* cancelbtn */
+  .cancelbtn {
+    background-color: #ccc;
+    color: #333;
+  }
+  /* cancelbtn:hover */
+  .cancelbtn:hover {
+    background-color: #aaa;
+  }
+  /* signupbt */
+  .signupbtn {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  /* signupbtn:hover */
+  .signupbtn:hover {
+    background-color: #3e8e41;
+  }
