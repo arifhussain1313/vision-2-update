@@ -1,62 +1,95 @@
 .service-container, h2 {
-    background-color: #f7f7f7;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;    
-  }
-  
-  .service-container h2 {
-    font-weight: bold;
-    margin-top: 0;
-    color: #333;
-  }
-  
-  #service-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #service-select {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  #service-select:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #submit-btn {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #337ab7;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  #submit-btn:hover {
-    background-color: #23527c;
-  }
-  
-  #submit-btn:active {
-    background-color: #1d4f7c;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+  background-color: #f7f7f7;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px auto;
+  width: 80%;
+  scrollbar-width: none;    
+}
+.service-container::-webkit-scrollbar{
+  display: none;
+}
+#p{
+  font-weight: bold;
+}
+.service-container h2 {
+  font-weight: bold;
+  margin-top: 0;
+  color: #333;
+}
+
+#service-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 50%;
+  margin: 40px auto;
+}
+
+#service-select {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#service-select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#submit-btn {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#submit-btn:hover {
+  background-color: #23527c;
+}
+
+#submit-btn:active {
+  background-color: #1d4f7c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some extra styles to make it look more professional */
+#service-form {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#service-select, #submit-btn {
+  font-family: Arial, sans-serif;
+}
+
+#service-select::placeholder {
+  color: #ccc;
+}
+
+#submit-btn {
+  font-weight: bold;
+}

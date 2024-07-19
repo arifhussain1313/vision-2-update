@@ -158,3 +158,19 @@ body {
   opacity: 0;
   cursor: pointer;
 }
+
+
+
+/* responsive */
+
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .nav-bar {
+    height: 60px; /* Reduce height for mobile */
+  }
+  .search-bar {
+    width: 200px; /* Adjust search bar width */
+  }
+  /* Add styles for hiding elements or changing layouts for mobile */
+}
