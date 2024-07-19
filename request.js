@@ -1,55 +1,35 @@
-
-
-
-const form = document.getElementById('service-form');
-const select = document.getElementById('service-select');
-const submitBtn = document.getElementById('submit-btn');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const selectedService = select.value;
-  if (selectedService) {
-    localStorage.setItem('notification', selectedService);
-    window.location.href = 'pr.html';
-  } else {
-    alert('Please select a service');
-  }
-});
-
-
-// get the notification icon and count elements
-const notificationIcon = document.getElementById('notification-icon');
-const notificationCount = document.getElementById('notification-count');
-const notificationDropdown = document.getElementById('notification-dropdown');
-const notificationList = document.getElementById('notification-list');
-
-// initialize notification count to 0
-let notificationCountValue = 0;
-
-// function to update notification count and display notifications
-function updateNotifications(request) {
-  notificationCountValue++;
-  notificationCount.textContent = notificationCountValue;
-
-  // create a new notification list item
-  const notificationItem = document.createElement('li');
-  notificationItem.textContent = `New request: ${request}`;
-  notificationList.appendChild(notificationItem);
-
-  // show the notification dropdown menu
-  notificationDropdown.classList.add('show');
-}
-
-// add event listener to the submit button
-document.getElementById('submit-btn').addEventListener('click', (e) => {
-  e.preventDefault();
-  const request = document.getElementById('service-select').value;
-  updateNotifications(request);
-});
-
-// add event listener to the notification icon
-notificationIcon.addEventListener('click', () => {
-  notificationDropdown.classList.toggle('show');
-});
-
-
+document.addEventListener('DOMContentLoaded', function() {
+    const serviceSelect = document.getElementById('service-Select');
+    const submitBtn = document.getElementById('submit-btn');
+    const notificationIcon = document.getElementById('notification-icon');
+    const notificationCount = document.getElementById('notification-count');
+    let selectedServicesCount = 0;
+  
+    submitBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+  
+      if (serviceSelect.value !== "") {
+        selectedServicesCount++;
+        updateNotificationCount();
+        addNotification(serviceSelect.options[serviceSelect.selectedIndex].text);
+        serviceSelect.value = ""; // Reset the dropdown after selection
+      }
+    });
+  
+    function updateNotificationCount() {
+      notificationCount.textContent = selectedServicesCount;
+    }
+  
+    function addNotification(service) {
+      const notificationList = document.getElementById('notification-list');
+      const li = document.createElement('li');
+      li.textContent = `Service selected: ${service}`;
+      notificationList.appendChild(li);
+    }
+  
+    notificationIcon.addEventListener('click', function() {
+      const notificationDropdown = document.getElementById('notification-dropdown');
+      notificationDropdown.classList.toggle('show');
+    });
+  });
+  
