@@ -33,3 +33,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+
+
+
+
+//   alert to pr.html
+
+document.getElementById("submit-btn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+  
+    // Get the selected service
+    var selectedService = document.getElementById("service-Select").value;
+  
+    // Store the selected service in localStorage
+    localStorage.setItem("selectedService", selectedService);
+  
+    // Redirect to pr.html
+    window.location.href = "pr.html";
+  });
+  
