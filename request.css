@@ -93,3 +93,80 @@
 #submit-btn {
   font-weight: bold;
 }
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-bar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  .service-container, #service-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .service-container {
+    margin: 20px auto;
+  }
+
+  #service-form {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .nav-bar .logo {
+    width: 40px;
+  }
+
+  .notification-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .profile-image {
+    width: 24px;
+    height: 24px;
+  }
+
+  .service-container, #service-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .service-container {
+    margin: 10px auto;
+  }
+
+  #service-form {
+    margin: 10px auto;
+  }
+}

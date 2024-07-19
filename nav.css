@@ -164,13 +164,50 @@ body {
 /* responsive */
 
 
-@media only screen and (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
+/* Responsive styling */
+@media (max-width: 768px) {
   .nav-bar {
-    height: 60px; /* Reduce height for mobile */
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .nav-bar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-bar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
   .search-bar {
-    width: 200px; /* Adjust search bar width */
+    width: 100%;
+    margin-bottom: 10px;
   }
-  /* Add styles for hiding elements or changing layouts for mobile */
+
+  .search-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .nav-bar .logo {
+    width: 40px;
+  }
+
+  .notification-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .profile-image {
+    width: 24px;
+    height: 24px;
+  }
 }

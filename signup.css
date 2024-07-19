@@ -90,3 +90,68 @@ body {
   .signupbtn:hover {
     background-color: #3e8e41;
   }
+
+  /* Add responsive design for the sign up form */
+
+/* Medium Screen Size (768px - 992px) */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 400px;
+  }
+  #service-form {
+    width: 60%;
+  }
+  #service-select {
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #submit-btn {
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* Small Screen Size (480px - 767px) */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 300px;
+  }
+  #service-form {
+    width: 70%;
+  }
+  #service-select {
+    height: 35px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  #submit-btn {
+    height: 35px;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Screen Size (320px - 479px) */
+
+@media (max-width: 479px) {
+  .container {
+    max-width: 250px;
+  }
+  #service-form {
+    width: 80%;
+  }
+  #service-select {
+    height: 30px;
+    padding: 6px;
+    font-size: 12px;
+  }
+  #submit-btn {
+    height: 30px;
+    padding: 6px;
+    font-size: 12px;
+  }
+}
