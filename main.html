@@ -48,6 +48,8 @@
     <link rel="stylesheet" href="profile.css" />
     <!-- custom js link profile -->
     <script src="profile.js" defer></script>
+    <!-- profile html -->
+    <link rel="stylesheet" href="profile.html">
     <style>
       .card {
   margin: 20px;
@@ -99,9 +101,9 @@
     <ul>
       <li><a href="#main.html">Home</a></li>
       <li><a href="#about">About Us</a></li>
-      <li class="dropdown">
+      <li class="dropdown" id="d">
         <a href="#">Services</a>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="c">
           <a href="#">Roadside Repairing</a>
           <a href="#">Gas Station</a>
           <a href="#">Towing Services</a>
@@ -119,7 +121,7 @@
       </a>
       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown" id="drop">
         <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="profile.html">Settings</a></li>
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item change-profile-image" href="#">Change Profile Image</a></li>
       </ul>

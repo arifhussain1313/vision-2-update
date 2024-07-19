@@ -35,3 +35,27 @@ document.querySelector('form').addEventListener('submit', (e) => {
     });
     // TO DO: Send form data to server using AJAX or Fetch API
 });
+
+
+
+// 
+
+// signup.js
+document.addEventListener('DOMContentLoaded', () => {
+    const signupForm = document.getElementById('signup-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const contactTnput = document.getElementById('contact');
+  
+    signupForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+  
+      // Save user details to localStorage
+      localStorage.setItem('userName', nameInput.value);
+      localStorage.setItem('userEmail', emailInput.value);
+  
+      // Redirect to profile page or display a success message
+      window.location.href = 'profile.html';
+    });
+  });
+  
