@@ -85,7 +85,9 @@ body {
   background-color: #ddd;
 }
 .search-bar {
-  width: 300px;
+  width: calc(100% - 80px);
+  margin-bottom: 10px;
+  padding-right: 80px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -104,6 +106,12 @@ body {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  margin-bottom: 10px;
 }
 
 .search-btn:hover {
@@ -188,6 +196,7 @@ body {
 
   .search-btn {
     width: 100%;
+
   }
 }
 
