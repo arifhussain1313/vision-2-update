@@ -234,20 +234,82 @@
      <!-- request section start -->
      <div class="service-container">
       <h2>Choose a Service:</h2>
+      <p id="p"> 
+        Frist step: The first step is selecting a service you want, such as roadside repairing, towing, fuel delivery and etc...
+        Second step: Your second step is clicking on the submit button to achieve the service you want.
+        Third step: just wait a moment to get a response from our service providers.
+      </p>
       <form id="service-form">
         <div id="notification-list">
-        <select id="service-Select">
-          <option value="">Select a Service</option>
-          <option value="roadside-repair">Roadside Repair</option>
-          <option value="gas-station-services">Gas Station Services</option>
-          <option value="towing-services">Towing Services</option>
-          <option value="ac-repairing-services">AC Repairing Services</option>
-          <option value="refrigerator-repair-services">Refrigerator Repair Services</option>
-          <option value="fuel-delivery-services">Fuel Delivery Services</option>
-        </select>
-      </div>
-        <button id="submit-btn">Submit</button>
+          <select id="service-Select">
+            <option value="">Select a Service</option>
+            <option value="roadside-repair">Roadside Repair</option>
+            <option value="gas-station-services">Gas Station Services</option>
+            <option value="towing-services">Towing Services</option>
+            <option value="ac-repairing-services">AC Repairing Services</option>
+            <option value="refrigerator-repair-services">Refrigerator Repair Services</option>
+            <option value="fuel-delivery-services">Fuel Delivery Services</option>
+          </select>
+        </div>
+        <button type="button" id="open-box-btn" style="background-color: lightgreen; color: black;"><b>continue</b></button>
       </form>
+      
+      <div id="roadside-repair" class="service-box" style="display:none; border: 1px solid #ccc; padding: 20px;
+      margin-top: 10px;">
+        <h3>Roadside Repair</h3>
+        <p>Stuck on the side of the road? Don't panic!
+
+          We're here to get you back on the road fast. Our expert roadside assistance team offers:
+        <b>1st offer = </b>RS 500
+        <b>2nd offer = </b>RS 1000
+        <b>3rd offer = </b>RS 1500</p>
+        <button id="submit-btn">Submit</button>
+      </div>
+      
+      <div id="gas-station-services" class="service-box" style="display:none;">
+        <h3>Gas Station Services</h3>
+        <p>Need to refill your gas? We can help you.
+          <b>1st offer = </b>RS 500
+          <b>2nd offer = </b>RS 1000
+          <b>3rd offer = </b>RS 1500</p>
+        <button id="submit-gas-station">Submit</button>
+      </div>
+      
+      <div id="towing-services" class="service-box" style="display:none;">
+        <h3>Towing Services</h3>
+        <p>Need to tow your car? We can help you.
+          <b>1st offer = </b>RS 500
+          <b>2nd offer = </b>RS 1000
+          <b>3rd offer = </b>RS 1500</p>
+        <button id="submit-towing">Submit</button>
+      </div>
+      
+      <div id="ac-repairing-services" class="service-box" style="display:none;">
+        <h3>AC Repairing Services</h3>
+        <p>Need to repair your AC? We can help you.
+          <b>1st offer = </b>RS 500
+          <b>2nd offer = </b>RS 1000
+          <b>3rd offer = </b>RS 1500</p>
+        <button id="submit-ac-repair">Submit</button>
+      </div>
+      
+      <div id="refrigerator-repair-services" class="service-box" style="display:none;">
+        <h3>Refrigerator Repair Services</h3>
+        <p>Need to repair your refrigerator? We can help you.
+          <b>1st offer = </b>RS 500
+          <b>2nd offer = </b>RS 1000
+          <b>3rd offer = </b>RS 1500</p>
+        <button id="submit-refrigerator-repair">Submit</button>
+      </div>
+      
+      <div id="fuel-delivery-services" class="service-box" style="display:none;">
+        <h3>Fuel Delivery Services</h3>
+        <p>Need to deliver your fuel? We can help you.
+          <b>1st offer = </b>RS 500
+          <b>2nd offer = </b>RS 1000
+          <b>3rd offer = </b>RS 1500</p>
+        <button id="submit-fuel-delivery">Submit</button>
+      </div>
     </div>
      <!-- request section end -->
      <!-- About Us Section -->

@@ -1,3 +1,45 @@
+document.getElementById('open-box-btn').addEventListener('click', function() {
+  // Hide all service boxes
+  document.querySelectorAll('.service-box').forEach(function(box) {
+    box.style.display = 'none';
+  });
+
+  // Get the selected service
+  var selectedService = document.getElementById('service-Select').value;
+
+  // Show the corresponding service box
+  if (selectedService) {
+    document.getElementById(selectedService).style.display = 'block';
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const serviceSelect = document.getElementById('service-Select');
     const submitBtn = document.getElementById('submit-btn');
