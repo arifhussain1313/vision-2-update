@@ -1,3 +1,4 @@
+// onclick open the rlated box of each srvice
 document.getElementById('open-box-btn').addEventListener('click', function() {
   // Hide all service boxes
   document.querySelectorAll('.service-box').forEach(function(box) {
@@ -7,39 +8,14 @@ document.getElementById('open-box-btn').addEventListener('click', function() {
   // Get the selected service
   var selectedService = document.getElementById('service-Select').value;
 
-  // Show the corresponding service box
+  // Show the selected service box
   if (selectedService) {
     document.getElementById(selectedService).style.display = 'block';
   }
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// notification count 
 document.addEventListener('DOMContentLoaded', function() {
     const serviceSelect = document.getElementById('service-Select');
     const submitBtn = document.getElementById('submit-btn');
@@ -61,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateNotificationCount() {
       notificationCount.textContent = selectedServicesCount;
     }
-  
+  // notification list 
     function addNotification(service) {
       const notificationList = document.getElementById('notification-list');
       const li = document.createElement('li');
@@ -94,8 +70,4 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
     window.location.href = "pr.html";
   });
 
-
-  // box
-
-  var btn = document.getElementById("submit-btn");
   
