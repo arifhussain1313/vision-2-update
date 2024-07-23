@@ -51,4 +51,9 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
     // Redirect to pr.html
     window.location.href = "pr.html";
   });
+
+
+  // box
+
+  var btn = document.getElementById("submit-btn");
   
